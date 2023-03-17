@@ -1,0 +1,108 @@
+:root {
+    --dark: #292C35;
+    --light: #F1F1F1;
+    --label: #111;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--dark);
+    transition: all 0.8s;
+}
+
+.container {
+    margin-top: 270px;
+    text-align: center;
+    line-height: 0px;
+}
+
+.dark {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: -100px;
+    color: rgb(129, 34, 129);
+}
+
+.white {
+    position: relative;
+    top: -23px;
+    opacity: 0;
+    visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: -100px;
+    color: rgb(7, 117, 207);
+
+
+
+    /*invisible items*/
+}
+
+.switcher {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 235.38px;
+    gap: 2.8rem;
+    height: 102px;
+    left: 602px;
+    top: 339px;
+
+    background: #000000;
+    border-radius: 59px;
+}
+
+.moon {
+    position: absolute;
+    width: 94.15px;
+    height: 94.15px;
+    left: 0px;
+    top: 5px;
+    z-index: 0;
+
+}
+
+.sun {
+    position: absolute;
+    width: 94.15px;
+    height: 94.15px;
+    left: 136px;
+    top: 5px;
+    z-index: 0;
+}
+
+.ball {
+    width: 86.31px;
+    height: 86.31px;
+    background: #F1F1F1;
+    border-radius: 50%;
+    z-index: 99;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.light .ball {
+
+    margin-left: -222px;
+}
+
+.light body {
+    background-color: var(--light);
+
+}
+.light .white{
+    opacity: inherit;
+    visibility: visible;
+}
+.light .dark{
+    opacity: 0;
+    visibility: hidden;
+}
