@@ -1,1 +1,2 @@
-# Página de troca de tema
+# Theme-Swither
+Página de troca cor do tema
