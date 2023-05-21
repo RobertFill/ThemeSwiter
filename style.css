@@ -8,8 +8,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--dark);
     transition: all 0.8s;
+    background-color: #f39c12;
 }
 
 .container {
@@ -18,33 +18,44 @@ body {
     line-height: 0px;
 }
 
+/*---------------titles------------*/
 .dark {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     font-weight: 700;
     font-size: 40px;
     margin-left: -100px;
+
+
+    opacity: 0;
+    visibility: hidden; 
+
+    text-shadow: 4px 2px 2px black;
     color: rgb(129, 34, 129);
+
+    transition: .2s ease-in-out;
 }
 
 .white {
     position: relative;
     top: -23px;
-    opacity: 0;
-    visibility: hidden;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     font-weight: 700;
     font-size: 40px;
     margin-left: -100px;
-    color: rgb(7, 117, 207);
 
 
+    text-shadow: 3.5px 2px 2px black;
+    color: whitesmoke;
+
+
+    transition: .2s ease-in-out;
 
     /*invisible items*/
 }
 
-.switcher {
+.switcher {         /*----button-switch-----*/
     position: absolute;
     display: flex;
     align-items: center;
@@ -57,6 +68,7 @@ body {
 
     background: #000000;
     border-radius: 59px;
+
 }
 
 .moon {
@@ -89,20 +101,25 @@ body {
     transition: 0.5s;
 }
 
+/*-------------event-switch------------*/
+
 .light .ball {
 
     margin-left: -222px;
 }
 
-.light body {
-    background-color: var(--light);
-
-}
 .light .white{
-    opacity: inherit;
-    visibility: visible;
-}
-.light .dark{
+
     opacity: 0;
     visibility: hidden;
+
+    transition: .2s ease-in-out;
+}
+.light .dark{
+    opacity: inherit;
+    visibility: visible;
+
+    transition: .2s ease-in-out;
+   
+    
 }
