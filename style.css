@@ -13,38 +13,18 @@ body {
 }
 
 .container {
-    margin-top: 270px;
     text-align: center;
-    line-height: 0px;
+    margin-top: 14rem;
+
 }
 
 /*---------------titles------------*/
-.dark {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    font-weight: 700;
-    font-size: 40px;
-    margin-left: -100px;
-
-
-    opacity: 0;
-    visibility: hidden; 
-
-    text-shadow: 4px 2px 2px black;
-    color: rgb(129, 34, 129);
-
-    transition: .2s ease-in-out;
-}
-
 .white {
-    position: relative;
-    top: -23px;
+    display: block;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
     font-weight: 700;
     font-size: 40px;
-    margin-left: -100px;
-
 
     text-shadow: 3.5px 2px 2px black;
     color: whitesmoke;
@@ -52,74 +32,100 @@ body {
 
     transition: .2s ease-in-out;
 
+
+
+
+}
+
+.dark {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+
+    text-shadow: 4px 2px 2px black;
+    color: rgb(129, 34, 129);
+
+    transition: .2s ease-in-out;
+
     /*invisible items*/
 }
 
-.switcher {         /*----button-switch-----*/
-    position: absolute;
+.switcher {
+    /*----button-switch-----*/
+
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
     width: 235.38px;
-    gap: 2.8rem;
     height: 102px;
-    left: 602px;
-    top: 339px;
-
     background: #000000;
     border-radius: 59px;
+
+    gap: 38px;
 
 }
 
 .moon {
-    position: absolute;
+
+    position: relative;
     width: 94.15px;
     height: 94.15px;
-    left: 0px;
-    top: 5px;
-    z-index: 0;
+
+    
 
 }
 
 .sun {
-    position: absolute;
+
+    position: relative;
     width: 94.15px;
     height: 94.15px;
-    left: 136px;
-    top: 5px;
-    z-index: 0;
+
+   
+
+
 }
 
 .ball {
+    position: absolute;
+
+    margin-left: 130px;
     width: 86.31px;
     height: 86.31px;
     background: #F1F1F1;
     border-radius: 50%;
-    z-index: 99;
-    margin-left: 40px;
+
     cursor: pointer;
-    transition: 0.5s;
+    transition: ease-in-out 0.4s;
+
+   
+
+
+
 }
 
 /*-------------event-switch------------*/
 
 .light .ball {
-
-    margin-left: -222px;
+    margin-right: 260px;
 }
 
-.light .white{
+.light .white {
+    display: none;
 
-    opacity: 0;
-    visibility: hidden;
-
-    transition: .2s ease-in-out;
+    
 }
-.light .dark{
+
+.light .dark {
+    display: block;
     opacity: inherit;
     visibility: visible;
 
-    transition: .2s ease-in-out;
-   
     
+
+
+
 }
